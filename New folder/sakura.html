@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Web</title>
+</head>
+<style>
+    *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(254, 162, 198);
+          
+        }
+
+        .no1:hover{
+            color: black;
+        }
+
+        .nav1{
+            align-content: center;
+            border: 5px;
+            width: 100px;
+            border-radius: 70px;
+            background-color: #ff4882da;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 55px;
+            color: white;
+            padding: 7px;
+        }
+       
+        .wm{
+            color: rgb(255, 103, 164);
+            padding-left: 50px;
+            font-size: 40px;
+        }
+
+        .bg1{
+            /*  */
+            background-image: url("https://img.harianjogja.com/posts/2021/04/06/1068196/sakura.jpg");
+            background-size: cover;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+  
+        }
+
+        .row{
+            display: flex;
+            height: 88%;
+            align-items: center;
+        }
+
+        .col{
+            flex-basis: 50%;
+
+        }
+
+        .text{
+            position: absolute;
+            color: rgb(0, 0, 0);
+            top: 10%;
+            left: 5%;
+            right: 10%;
+            width: auto;
+
+        }
+
+        h1{
+            color:rgb(205, 73, 137);
+            /* font-size: 50px; */
+           
+        }
+
+        button{
+            width:180px;
+            color:rgb(114, 28, 51);
+            font-size: 15px;
+            padding: 10px 0;
+            background: #fff;
+            border: 0;
+            border-radius: 20px;
+            outline: none;
+            margin-top: 30px;
+
+        }
+
+        button:hover{
+            color: rgb(177, 55, 108);
+        }
+
+        .card{
+            width:200px;
+            height:230px;
+            display:inline-block;
+            border-radius: 10px;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 10px 15px;
+            background-position: center;
+            background-size:cover;
+            transition: transform 0,5s;
+        }
+
+        @media (max-width: 1076px) {
+        .card{
+            width: 112px;
+            height: 108px;
+     } 
+}
+
+        @media (max-width: 693px) {
+        .card{
+            width: 112px;
+            height: 108px;
+     } 
+}
+
+
+        .card1{
+            background-image: url("https://image.winudf.com/v2/image1/c3Rwcm93YWxscGFwZXIuQ2hlcnJ5LkJsb3Nzb20uV2FsbHBhcGVyLnRoX3NjcmVlbl8wXzE2NTI3ODcwNjlfMDc3/screen-0.webp?fakeurl=1&type=.webp");
+        }
+        .card2{
+            background-image: url("https://image.winudf.com/v2/image1/c3Rwcm93YWxscGFwZXIuQ2hlcnJ5LkJsb3Nzb20uV2FsbHBhcGVyLnRoX3NjcmVlbl80XzE2NTI3ODcwNzVfMDYx/screen-4.webp?fakeurl=1&type=.webp");
+        }
+        .card3{
+            background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20210316/pngtree-vertical-version-of-cherry-blossom-photography-romantic-pink-image_586839.jpg");
+        }
+        .card4{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjUetnHM-3mV6SGXz-Xh35QyofKSQTpkdPaTABl6m9ImqZrkSSCozXPTyKXAqMR5-7sQg&usqp=CAU");
+        }
+        
+        .card:hover{
+            transform: translateY(-10px);
+        } 
+
+</style>
+<body>       
+       
+    <div class="nav">
+        <p class="wm">Sakura</p>
+        <h1>About Flower</h1>
+        <div class="nav1">
+            <a href="website.html"> 
+              <p class="no1">Home</p>  
+            </a>
+            
+        </div>
+    </div>
+ 
+    
+    <div style="width:100%;height:93vh;" class="bg1">
+</div>
+
+<div class="row text">
+    <div class="col">
+        <h1><i> Sakura (桜, 櫻 ) </i></h1>
+        <P>Sakura (桜, 櫻 ) adalah sebutan untuk bunga yang tumbuh dari pohon bergenus Prunus maupun subgenusnya, Cerasus. Genus tersebut merupakan genus pepohonan yang umum dijumpai di Asia Timur, seperti Tiongkok, Korea, dan terutama Jepang.</P>
+        <button type="button">Explore</button>
+    </div>
+    <div class="col">
+        <div class="card card1">
+            
+        </div>
+        <div class="card card2">
+            
+        </div>
+        <div class="card card3">
+            
+        </div>
+        <div class="card card4">
+            
+        </div>
+    </div>
+</div>
+   
+</body>
+</html>

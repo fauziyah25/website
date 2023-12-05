@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Web</title>
+</head>
+<style>
+    *{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 0;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(112, 222, 127);
+          
+        }
+
+        .no1:hover{
+            color: black;
+        }
+
+        .nav1{
+            align-content: center;
+            border: 5px;
+            width: 100px;
+            border-radius: 70px;
+            background-color: #7fff85da;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            gap: 55px;
+            color: white;
+            padding: 7px;
+        }
+       
+        .wm{
+            color: rgb(149, 252, 177);
+            padding-left: 50px;
+            font-size: 40px;
+        }
+
+        .bg1{
+            /*  */
+            background-image: url("https://cdn.pixabay.com/photo/2018/08/19/21/43/jasmin-3617660_640.jpg");
+            background-size: cover;
+            filter: blur(5px);
+            -webkit-filter: blur(5px);
+  
+        }
+
+        .row{
+            display: flex;
+            height: 88%;
+            align-items: center;
+        }
+
+        .col{
+            flex-basis: 50%;
+
+        }
+
+        .text{
+            position: absolute;
+            color: rgb(0, 0, 0);
+            top: 10%;
+            left: 5%;
+            right: 10%;
+            width: auto;
+
+        }
+
+        h1{
+            color:rgb(165, 249, 184);
+            /* font-size: 50px; */
+           
+        }
+
+        button{
+            width:180px;
+            color:rgb(11, 136, 67);
+            font-size: 15px;
+            padding: 10px 0;
+            background: #fff;
+            border: 0;
+            border-radius: 20px;
+            outline: none;
+            margin-top: 30px;
+
+        }
+
+        button:hover{
+            color: rgb(20, 177, 67);
+        }
+
+        .card{
+            width:200px;
+            height:230px;
+            display:inline-block;
+            border-radius: 10px;
+            padding: 15px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 10px 15px;
+            background-position: center;
+            background-size:cover;
+            transition: transform 0,5s;
+        }
+
+        @media (max-width: 1076px) {
+        .card{
+            width: 112px;
+            height: 108px;
+     } 
+}
+
+        @media (max-width: 693px) {
+        .card{
+            width: 112px;
+            height: 108px;
+     } 
+}
+
+
+        .card1{
+            background-image: url("https://3.bp.blogspot.com/-X-7tSsGrWyc/VPq3XdMj0XI/AAAAAAAATOA/kYTqP7vbI-M/s640/Melati%2BPutih06.jpg");
+        }
+        .card2{
+            background-image: url("https://id-test-11.slatic.net/p/b5e2d01c85835515538b177a5160aa42.jpg");
+        }
+        .card3{
+            background-image: url("data:image/jpeg;base64,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");
+        }
+        .card4{
+            background-image: url("https://tanahkaya.com/wp-content/uploads/2018/09/Jasmine-sambac.jpg");
+        }
+        
+        .card:hover{
+            transform: translateY(-10px);
+        } 
+
+</style>
+<body>       
+       
+    <div class="nav">
+        <p class="wm">Melati</p>
+        <h1>About Flower</h1>
+        <div class="nav1">
+            <a href="website.html"> 
+              <p class="no1">Home</p>  
+            </a>
+            
+        </div>
+    </div>
+ 
+    
+    <div style="width:100%;height:93vh;" class="bg1">
+</div>
+
+<div class="row text">
+    <div class="col">
+        <h1><i>Melati</i></h1>
+        <P>Melati merupakan tanaman bunga hias berupa perdu berbatang tegak yang hidup menahun. Melati merupakan genus dari semak dan tanaman merambat dalam keluarga zaitun.</P>
+        <button type="button">Explore</button>
+    </div>
+    <div class="col">
+        <div class="card card1">
+            
+        </div>
+        <div class="card card2">
+            
+        </div>
+        <div class="card card3">
+            
+        </div>
+        <div class="card card4">
+            
+        </div>
+    </div>
+</div>
+   
+</body>
+</html>
